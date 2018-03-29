@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Resize tubs</title>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <script src="script.js"></script>
+        <script>
+      //  block_resizer.add();
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="top" class="horizontal_resize"></div>
+            <div id="site">
+                <div id="left"></div>
+                <div id="center"></div>
+                <div id="right"></div>
+            </div>
+            <div id="bottom"></div>
+        </div>
+        <script>
+
+            resizer.add([{
+                id: "top",
+                type: "horizontal",
+                resizeble: "bottom"
+            },
+            {
+                id: "bottom",
+                tpye: "horizontal",
+                resizeble: "top"
+            },
+            {
+                id: "right",
+                type: "vertical",
+                resizeble: "0 1 0 0"
+            },
+            {
+                id: "left",
+                type: "vertical",
+                resizeble: "left"
+            }
+        ])
+           
+        </script>
+    </body>
+</html>

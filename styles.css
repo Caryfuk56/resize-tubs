@@ -1,0 +1,55 @@
+* {margin: 0; padding: 0;}
+html, body {height: 100%; margin: 0; padding: 0;}
+
+#wrappper {
+    position: fixed;
+    width: 100%; height: 100%;
+    margin: 0;
+}
+
+#top {
+    width: 100%; height: 50px;
+    background-color: aquamarine;
+    border-bottom: 2px solid black;
+}
+
+#bottom {
+    position: absolute; bottom: 0;
+    width: 100%; height: 50px;
+    background-color: blanchedalmond;
+    border-top:  2px solid black;
+}
+
+#site {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 200px auto 150px;
+    height: 100%; width: 100%;
+    background-color: whitesmoke;
+}
+
+#left {
+    height: 100%;
+    background-color: mediumturquoise;
+    border-right:  2px solid black;
+}
+
+
+#right {
+     height: 100%;
+    background-color: mediumturquoise;
+    border-left:  2px solid black;
+}
+
+
+.horizontal {
+    position: absolute;
+    background: red;
+    cursor: n-resize;
+}
+
+.vertical {
+    position: absolute;
+    cursor: e-resize;
+    background: blueviolet;
+}
